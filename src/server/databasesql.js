@@ -1,11 +1,11 @@
-const AUTHENTICITY = process.env.CLEARDB_DATABASE_URL || {
+const settings = process.env.CLEARDB_DATABASE_URL || {
   host:process.env.HOST_NAME,
   user: process.env.USER_NAME,
   password: process.env.PASSWORD_SECRET,
   database: process.env.DATABASE_NAME
 }
 
-module.exports = { AUTHENTICITY }
+module.exports = { settings }
 
   /*var mysql=require('mysql')
 
