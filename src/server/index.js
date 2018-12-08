@@ -15,20 +15,20 @@ const config=require('./databasesql.js')
 
 //morgan is the logger middleware function using the given format and options
 // Basically for log
-const morgan = require('morgan');
+//const morgan = require('morgan');
 //THE WAY TO LET CLIENTS AND SERVERS
 // COMMUNICATE EVEN IF THEY ARE NOT ON THE SAME DOMAIN 
 //for Some Extra HTTP Headers
-const cors=require('cors')
+//const cors=require('cors')
 
 
 console.log(process.env.DATABASE_NAME)
 
 //Log mode
-app.use(morgan('short'));
+//app.use(morgan('short'));
 
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 7001
 const buildPath = path.join(__dirname, '../../dist')
 
 app.use(express.static(buildPath))
