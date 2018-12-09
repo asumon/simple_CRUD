@@ -12,7 +12,8 @@ export default class App extends Component {
 
   }
   componentDidMount() {
-fetch('http://localhost:9000/api/allmentors')
+//fetch('http://localhost:9000/api/allmentors')
+  fetch('https://schedule-project4hyf.herokuapp.com/api/allmentors')
       .then(res => res.json())
       .then(mentor =>{
         this.setState({
