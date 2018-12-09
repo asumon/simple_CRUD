@@ -35,7 +35,7 @@ export default class App extends Component {
        <ul>
          {mentors.map(mentorList=>(
            <li key={mentorList.id}>
-           {mentorList.first_name},{mentorList.last_name} <span> <a href={mentorList.Slack_nickname}>Link to GitHub</a></span> {mentorList.Type}{mentorList.Status}
+           {mentorList.first_name},{mentorList.last_name} <span> <a href={mentorList.slack_nickname}>Link to GitHub</a></span> {mentorList.type}{mentorList.status}
            </li>
          ))};
         
